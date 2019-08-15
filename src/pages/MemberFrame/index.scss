@@ -1,0 +1,122 @@
+.member-content {
+    width: calc(100%-8px);
+    height: 100%;
+    border: 4px solid #464646;
+
+    .gallery-panel {
+        width: 100%;
+        height: calc(100% - 65px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .control-panel {
+        width: 100%;
+        height: 65px;
+        background-blend-mode: normal;
+        background-image: linear-gradient(270deg, #5C1817, #433838);
+        display: flex;
+
+        .part {
+            width: 33.3%;
+            height: 100%;
+
+            &.center {
+                display: flex;
+                .slide-label {
+                    padding-top: 15px;
+                    width: calc(100% - 18px);
+
+                    span {
+                        color: #ffffff;
+                        font-family: Roboto;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 34px;
+                    }
+                }
+
+                img {
+                    margin-top: 24px;
+                    height: 17px;
+                    width: 9px;
+                }
+            }
+
+            &.right {
+                
+                .row-panel{
+                    display: inline-flex;
+
+                    .fullscreen {
+                        margin-top: 15px;
+                        margin-right: 15px;
+                        margin-left: 60px;
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .control-panel{
+        .part {
+            width: 50%;
+            height: 100%;
+
+            &.left {
+                display: none;
+            }
+
+            &.center {
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100% !important;
+            }
+
+            &.right {
+                .dropdown{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .control-panel{
+        
+    }
+}
+
+.iPhone-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+@media screen and (orientation: portrait) {
+    .full-image{
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .full-image{
+        height: 100%;
+    }
+}
+
+.general-image {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,60 @@
+.dropdown {
+
+    margin-top: 15px;
+
+    .dropdown-current {
+        display: flex;
+
+        .control {
+            position: relative;
+
+            img {
+
+                width: 36px;
+                height: 36px;
+            }
+
+            .control-input {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+            }
+        }
+
+        .dropdown-arrow {
+
+            margin: 10px 0 0 10px ;
+
+            img.arrow {
+                
+                height: 9px;
+                width: 17px;
+            }
+        }
+    }
+
+    .dropdown-select {
+
+        ul.select-list {
+            list-style-type: none;
+            max-height: 200px;
+            overflow-y: auto;
+            background: white;
+            padding: 10px 0;
+            margin: 0;
+
+            li{
+                background: white;
+                cursor: pointer;
+
+                &.active {
+                    background: #7aacee;
+                }
+
+                &:hover {
+                    background: lightblue;
+                }
+            }
+        }
+    }
+}

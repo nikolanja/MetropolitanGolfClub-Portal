@@ -1,0 +1,58 @@
+.join-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+
+    .main-container {
+        max-width: 1440px;
+        max-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-height: 60%;
+            max-width: 100%;
+        }
+    
+        .action {
+            width: 100%;
+            max-width: 450px;
+
+            .contactAddr {
+                margin-top: 40px;
+
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 14px;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .main-container {
+        height: 100%;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .main-container {
+        .action {
+            margin-top: 50px;
+        }
+    }
+}

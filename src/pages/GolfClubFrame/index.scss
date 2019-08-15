@@ -1,0 +1,194 @@
+.golf-club-content {
+    display: flex;
+
+    .filter-panel {
+        width: 241px;
+        .title {
+            padding-bottom: 21px;
+            span {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                text-transform: uppercase;
+            }
+        }
+
+        .tiers {
+            padding-bottom: 75px;
+            div.tier {
+                margin-top: 24px;
+                width: 100%;
+            }
+        }
+
+        .cities {
+            .city {
+                width: 228px;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .club-panel {
+        padding-left: 154px;
+        width: 845px;
+
+        .title {
+            width: 100%;
+            padding-bottom: 54px;
+
+            span {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+
+        .clubs {
+            display: block;
+            
+            .club {
+                width: 312px;
+                padding-right: 30px;
+                float: left;
+                margin-bottom: 20px;
+
+                span {
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+.btn-filter {
+    width: 100%;
+    height: 48px;
+    background-blend-mode: normal;
+    background-image: linear-gradient(270deg, #5C1817, #433838);
+    border-radius: 24px;
+    border: 1px;
+    color: white;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+
+    &.deactive{
+        opacity: 0.5;
+
+        &:hover{
+            background-image: linear-gradient(270deg, #7a2a29, #645555);
+        }
+    
+        &:active {
+            background-image: linear-gradient(270deg, #3f0b0a, #2b2222);
+        }
+    }
+
+    &:focus{
+        outline: none !important;
+    }
+
+    &.tier {
+        text-transform: capitalize;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .golf-club-content { 
+        display: block;
+
+        .filter-panel {
+            width: 100%;
+
+            .tiers {
+                display: flex;
+                padding-bottom: 30px;
+
+                .tier {
+                    margin: 0 10px;
+                }
+            }
+
+            .cities {
+                display: flex;
+                padding-bottom: 30px;
+
+                .city {
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .club-panel {
+            padding-top: 30px;
+            padding-left: 0;
+            width: 100%;
+            
+            .title {
+                padding-bottom: 40px;
+            }
+
+            .clubs {
+                .club {
+                    padding-right: 20px;
+                    width: 205px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    .golf-club-content { 
+        display: flex;
+        
+        .filter-panel {
+            width: 241px;
+
+            .tiers {
+                display: block;
+            }
+        }
+
+        .club-panel {
+            padding-left: 49px;
+            
+            .clubs {
+                .club {
+                    width: 205px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .golf-club-content { 
+        display: flex;
+        
+        .filter-panel {
+            width: 241px;
+        }
+
+        .club-panel {
+            padding-left: 154px;
+
+            .clubs {
+                .club {
+                    width: 282px;
+                }
+            }
+        }
+    }
+}

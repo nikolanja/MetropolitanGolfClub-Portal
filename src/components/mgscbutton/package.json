@@ -1,0 +1,7 @@
+{
+    "name": "MgscButton",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./MgscButton.js"
+}
+  

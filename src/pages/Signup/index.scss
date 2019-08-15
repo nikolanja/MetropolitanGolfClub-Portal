@@ -1,0 +1,176 @@
+.signup{
+
+    .signup-logo {
+        width: 205px;
+        height: 120px;
+        margin-bottom: 33px;
+    }
+
+    .form-title {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+
+    .user-form {
+        .form-content {
+            padding: 72px 0;
+
+            .form-item {
+                margin-bottom: 24px;
+
+                .form-label {
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    width: 100%;
+                    text-transform: uppercase;
+                }
+
+                .form-input {
+
+                    width: calc(100% - 22px);
+                    height: 38px;
+                    border: 1px solid #ffffff;
+                    background: rgba(255,255,255,0.2);
+                    padding: 0 10px;
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    margin-top: 1px;
+                    border-radius: 0;
+
+                    &:focus {
+                        border: 1px solid #93a7ff;
+                        background: rgba(147,167,255,0.3);
+                    }
+                }
+
+                &.error {
+                    margin: 0;
+                    
+                    span {
+                        color: red;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 22px;
+                    }
+                }
+
+                .input-phone {
+                    display: flex;
+                    
+                    .country-code {
+                        width: 200px;
+                        margin-right: 10px;
+                    }
+
+                    .phone {
+                        input{
+                            border: 1px solid #ffffff;
+                            background: rgba(255,255,255,0.2);
+                            padding: 0 10px;
+                            color: #ffffff;
+                            font-family: Roboto;
+                            font-size: 16px;
+                            margin-top: 1px;
+                            border-radius: 0;
+
+                            &:focus {
+                                border: 1px solid #93a7ff;
+                                background: rgba(147,167,255,0.3);
+                            }
+                            margin: 0;
+                        }
+                        margin-left: 10px;
+                        width: 100%
+                    }
+                }
+            }
+
+            .form-action {
+                padding-top: 24px;
+            }
+        }
+
+        div.tky {
+            padding: 65px 0;
+            
+            span.tky {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 36px;
+            }
+
+            .tky-desc {
+                padding-top: 8px;
+                span {
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+
+        img {
+            width: 60px;
+            height: 60px
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    .signup{
+        position: relative;
+        padding: 89px 20px 0 20px;
+
+        .user-form {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 490px) {
+
+    .signup{
+        position: relative;
+        padding: 89px 20px 0 20px;
+
+        .user-form {
+            width: 450px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .signup{
+        .btn-close {
+            top: 20px;
+            right: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .signup{
+        .btn-close {
+            top: 50px;
+            right: 125px;
+        }
+    }
+}

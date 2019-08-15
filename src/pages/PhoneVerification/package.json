@@ -1,0 +1,7 @@
+{
+    "name": "PhoneVerification",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PhoneVerification.js"
+}
+  

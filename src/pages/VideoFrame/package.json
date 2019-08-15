@@ -1,0 +1,7 @@
+{
+    "name": "VideoFrame",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./VideoFrame.js"
+}
+  

@@ -1,0 +1,7 @@
+{
+    "name": "SignupApplication",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./SignupApplication.js"
+}
+  
